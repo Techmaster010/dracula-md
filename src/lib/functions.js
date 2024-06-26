@@ -1,10 +1,10 @@
 /** 
  *  Created By DikaArdnt
- *  Modified By Muhammad Adriansyah
- *  CopyRight 2024 MIT License
- *  My Github : https://github.com/xyzencode
- *  My Instagram : https://instagram.com/xyzencode
- *  My Youtube : https://youtube.com/@xyzencode
+ *  Modified By Mindset_player and Kim
+ *  CopyRight 2024 UCHIHA CLAN
+ *  My Github : https://github.com/madmkisii
+ *  My Instagram : https://instagram.com/Madmkisii 
+ *  My Youtube : https://youtube.com/@saske_kim
 */
 
 import axios from "axios";
