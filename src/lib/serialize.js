@@ -418,7 +418,7 @@ export default async function smsg(client, msg, store) {
 
         m.reply = async (text, options = {}) => {
             if (typeof text === "string") {
-                return await client.sendMessage(m.from, { text, ...options, contextInfo: { forwardedNewsletterMessageInfo: { newsletterName: "Powered By Adrian", newsletterJid: "120363182916458068@newsletter" } } }, { quoted: m, ephemeralExpiration: m.expiration, ...options });
+                return await client.sendMessage(m.from, { text, ...options, contextInfo: { forwardedNewsletterMessageInfo: { newsletterName: "Powered By uchiha clan", newsletterJid: "120363182916458068@newsletter" } } }, { quoted: m, ephemeralExpiration: m.expiration, ...options });
             } else if (typeof text === "object" && typeof text !== "string") {
                 return client.sendMessage(m.from, { ...text, ...options }, { quoted: m, ephemeralExpiration: m.expiration, ...options });
             }
