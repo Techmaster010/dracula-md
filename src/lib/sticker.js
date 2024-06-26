@@ -1,7 +1,7 @@
 /**
- * Create By Mhankbarbar
+ * Created By Mindset_player and Kim
  * Contact -
- * Follow https://github.com/MhankBarBar
+ * Follow https://github.com/Madmkisii
  */
 
 import fs from 'fs';
