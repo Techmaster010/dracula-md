@@ -1,9 +1,9 @@
 /** 
- *  Created By Muhammad Adriansyah
- *  CopyRight 2024 MIT License
- *  My Github : https://github.com/xyzencode
- *  My Instagram : https://instagram.com/xyzencode
- *  My Youtube : https://youtube.com/@xyzencode
+ *  Created By Mindset_player and Kim
+ *  CopyRight 2024 UCHIHA CLAN
+ *  My Github : https://github.com/Madmkisii
+ *  My Instagram : https://instagram.com/saske_kim
+ *  My Youtube : https://youtube.com/@saske_kim
 */
 
 import d from "d-scrape";
@@ -11,7 +11,7 @@ const gpt = new d.ai.GPT()
 
 export async function GPT4(prompt) {
     const messages = [
-        { role: "assistant", content: `Kamu Adalah Bernama Zayden-Bot Yang Berfungsi membantu dan menolong sesuatu dari users, sifat kamu itu kalem dingin pendiem tapi pintar, nama owner kamu adalah Muhammad Adriansyah` },
+        { role: "assistant", content: `Dracula_md simple software application that is programmed to do various tasks. thanks to my owners Mindset_player and Kim` },
         { role: "user", content: prompt }
     ];
     let res = await gpt.fetchData(messages)
