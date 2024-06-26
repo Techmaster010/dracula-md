@@ -1,9 +1,9 @@
 /** 
- *  Created By Muhammad Adriansyah
- *  CopyRight 2024 MIT License
- *  My Github : https://github.com/xyzencode
- *  My Instagram : https://instagram.com/xyzencode
- *  My Youtube : https://youtube.com/@xyzencode
+ *  Created By Mindset_player and  Kim
+ *  CopyRight 2024 UCHIHA CLAN
+ *  My Github : https://github.com/Madmkisii
+ *  My Instagram : https://instagram.com/saske_kim
+ *  My Youtube : https://youtube.com/@saske_kim
 */
 
 import "dotenv/config.js";
