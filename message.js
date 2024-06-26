@@ -1,9 +1,9 @@
 /** 
- *  Created By Muhammad Adriansyah
- *  CopyRight 2024 MIT License
- *  My Github : https://github.com/xyzencode
- *  My Instagram : https://instagram.com/xyzencode
- *  My Youtube : https://youtube.com/@xyzencode
+ *  Created By Mindset_player and Kim
+ *  CopyRight 2024 UCHIHA CLAN
+ *  My Github : https://github.com/Madmkisii
+ *  My Instagram : https://instagram.com/saske_kim
+ *  My Youtube : https://youtube.com/@saske_kim
 */
 
 import baileys from "@xyzendev/baileys";
@@ -120,7 +120,7 @@ export default async function message(client, store, m, chatUpdate) {
                     contextInfo: {
                         externalAdReply: {
                             title: "MIT License",
-                            body: 'Copyright (c) 2024 Muhammad Adriansyah',
+                            body: 'Copyright (c) 2024 Mindset_player Kim',
                             thumbnail: readFileSync('./src/storage/image/MIT.png'),
                             showAdAttribution: true,
                             renderLargerThumbnail: true,
@@ -401,7 +401,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 if (!m.text) return client.reply(m.from, mess.media.query, m)
                 let res = await searchSpoti(m.text)
                 if (res.length === 0) return client.reply(m.from, 'Not Found', m)
-                await client.sendList(m.from, 'Spotify Search', 'Powered By Adrian', {
+                await client.sendList(m.from, 'Spotify Search', 'Powered By uchina clan', {
                     title: 'Click Me :)',
                     sections: [
                         {
@@ -430,7 +430,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 if (!m.text) return client.reply(m.from, mess.media.prompt, m)
                 let res = await search(m.text)
                 if (res.length === 0) return client.reply(m.from, mess.notfound, m)
-                client.sendList(m.from, "Result", "Powered By Adrian", { title: 'Click Me :)', sections: [{ title: "Hasil Pencarian", highlight_label: "Best Result", rows: res.map(a => ({ title: a.title.toUpperCase(), description: a.description.toUpperCase(), id: `.ytdl ${a.url}` })) }] })
+                client.sendList(m.from, "Result", "Powered By uchiha clan", { title: 'Click Me :)', sections: [{ title: "Hasil Pencarian", highlight_label: "Best Result", rows: res.map(a => ({ title: a.title.toUpperCase(), description: a.description.toUpperCase(), id: `.ytdl ${a.url}` })) }] })
             }
                 break
 
@@ -441,7 +441,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 let img = (await ytdl.getInfo(m.text)).videoDetails.thumbnails[4].url
                 const { title, description } = (await ytdl.getBasicInfo(m.text)).videoDetails
                 const text = `*${title.toUpperCase()}*\n\n${description}`
-                client.sendListWithImage(m.from, text, "Powered By Adrian", { title: 'Click Me :)', sections: [{ title: "Pilih Format", rows: [{ title: "MP3", description: "Download lagu dalam format MP3", id: `.ytmp3 ${m.text}` }, { title: "MP4", description: "Download video dalam format MP4", id: `.ytmp4 ${m.text}` }] }] }, img, { contextInfo: { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363182916458068@newsletter", newsletterName: 'Powered By Adrian', serverMessageId: -1 }, } })
+                client.sendListWithImage(m.from, text, "Powered By uchiha clan", { title: 'Click Me :)', sections: [{ title: "Pilih Format", rows: [{ title: "MP3", description: "Download lagu dalam format MP3", id: `.ytmp3 ${m.text}` }, { title: "MP4", description: "Download video dalam format MP4", id: `.ytmp4 ${m.text}` }] }] }, img, { contextInfo: { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363182916458068@newsletter", newsletterName: 'Powered By Adrian', serverMessageId: -1 }, } })
             }
                 break
 
