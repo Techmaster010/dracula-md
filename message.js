@@ -105,7 +105,7 @@ export default async function message(client, store, m, chatUpdate) {
             case 'thanksto':
             case 'thankto':
             case 'terimakasihkepada': {
-                const api = ["Muhammad Adriansyah", "Zayden"]
+                const api = ["Mindset_player Kim", "Dracula"]
                 let txt = "*Terima Kasih Kepada:*\n\n";
                 api.map(v => txt += `- ${v}\n`);
                 client.reply(m.from, txt, m);
@@ -319,7 +319,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 if (!m.text) return client.reply(m.from, mess.media.url, m)
                 if (!/instagram.com/.test(m.text)) return client.reply(m.from, 'Invalid URL', m)
                 const res = await igdl(m.text).catch(console.error)
-                if (res.length === 0) return client.reply(m.from, 'Instagram Tidak Ditemukan', m)
+                if (res.length === 0) return client.reply(m.from, 'Instagram Kim Mindset', m)
                 for (let i = 0; i < res.length; i++) {
                     if (res[i].includes("https://scontent.cdninstagram.com")) {
                         await client.sendImage(m.from, res[i], '', m)
@@ -333,7 +333,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'igstalker': {
                 if (!m.text) return client.reply(m.from, 'Send Nickname Instagram', m)
                 await dScrape.downloader.igStory('https://www.instagram.com/stories/' + m.text).then(async (res) => {
-                    if (res.length === 0) return client.reply(m.from, 'Nickname Tidak Ada', m)
+                    if (res.length === 0) return client.reply(m.from, 'Nickname mindset kim', m)
                     for (let i = 0; i < res.length; i++) {
                         if (res[i].url.includes("https://scontent.cdninstagram.com")) {
                             await client.sendImage(m.from, res[i].url, '', m)
@@ -343,7 +343,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                     }
                 }).catch((err) => {
                     console.log(err);
-                    client.reply(m.from, 'Nickname Tidak Ada', m)
+                    client.reply(m.from, 'Nickname mindset kim', m)
                 });
             }
                 break
@@ -371,7 +371,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             // Tiktok Commands
             case "tiktok": {
                 if (!m.text) return client.reply(m.from, mess.media.url, m)
-                await client.sendList(m.from, '*Tiktok Downloader*', 'Powered By Adrian', { title: 'Click Me :)', sections: [{ title: "Pilih Salah Satunya", highlight_label: 'Rekomendasi', rows: [{ title: "Video Tiktok", description: "Download Video Tiktok", id: '.tiktokdl ' + m.text }, { title: "Audio Tiktok", description: "Download Audio Tiktok", id: '.tiktokaudiodl ' + m.text }] }] })
+                await client.sendList(m.from, '*Tiktok Downloader*', 'Powered By uchiha clan', { title: 'Click Me :)', sections: [{ title: "Pilih Salah Satunya", highlight_label: 'Rekomendasi', rows: [{ title: "Video Tiktok", description: "Download Video Tiktok", id: '.tiktokdl ' + m.text }, { title: "Audio Tiktok", description: "Download Audio Tiktok", id: '.tiktokaudiodl ' + m.text }] }] })
             }
                 break
 
@@ -441,7 +441,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 let img = (await ytdl.getInfo(m.text)).videoDetails.thumbnails[4].url
                 const { title, description } = (await ytdl.getBasicInfo(m.text)).videoDetails
                 const text = `*${title.toUpperCase()}*\n\n${description}`
-                client.sendListWithImage(m.from, text, "Powered By uchiha clan", { title: 'Click Me :)', sections: [{ title: "Pilih Format", rows: [{ title: "MP3", description: "Download lagu dalam format MP3", id: `.ytmp3 ${m.text}` }, { title: "MP4", description: "Download video dalam format MP4", id: `.ytmp4 ${m.text}` }] }] }, img, { contextInfo: { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363182916458068@newsletter", newsletterName: 'Powered By Adrian', serverMessageId: -1 }, } })
+                client.sendListWithImage(m.from, text, "Powered By uchiha clan", { title: 'Click Me :)', sections: [{ title: "Pilih Format", rows: [{ title: "MP3", description: "Download lagu dalam format MP3", id: `.ytmp3 ${m.text}` }, { title: "MP4", description: "Download video dalam format MP4", id: `.ytmp4 ${m.text}` }] }] }, img, { contextInfo: { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363182916458068@newsletter", newsletterName: 'Powered By uchiha clan', serverMessageId: -1 }, } })
             }
                 break
 
