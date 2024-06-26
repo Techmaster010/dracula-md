@@ -1,10 +1,10 @@
 /** 
  *  Created By DikaArdnt
- *  Modified By Muhammad Adriansyah
- *  CopyRight 2024 MIT License
- *  My Github : https://github.com/xyzencode
- *  My Instagram : https://instagram.com/xyzencode
- *  My Youtube : https://youtube.com/@xyzencode
+ *  Modified By Mindset_player and Kim
+ *  CopyRight 2024 UCHIHA CLAN
+ *  My Github : https://github.com/Madmkisii
+ *  My Instagram : https://instagram.com/saske_kim
+ *  My Youtube : https://youtube.com/@saske_kim
 */
 
 import { areJidsSameUser, downloadContentFromMessage, downloadMediaMessage, extractMessageContent, generateWAMessage, generateWAMessageContent, jidDecode, jidNormalizedUser, prepareWAMessageMedia } from "@xyzendev/baileys";
@@ -244,7 +244,7 @@ export function Module({ client, store }) {
                                 deviceListMetadataVersion: 2
                             },
                             interactiveMessage: proto.Message.InteractiveMessage.fromObject({
-                                footer: proto.Message.InteractiveMessage.Footer.create({ text: "Powered By Adrian" }),
+                                footer: proto.Message.InteractiveMessage.Footer.create({ text: "Powered By uchiha clan" }),
                                 body: proto.Message.InteractiveMessage.Body.fromObject({
                                     text: title
                                 }),
